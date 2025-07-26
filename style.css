@@ -1,0 +1,388 @@
+/* Fuente y base */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: sticky; /* Se queda fijo al hacer scroll */
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: flex-end; /* Menú a la derecha */
+  align-items: center;
+  height: 100px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* LOGO FLOTANTE DENTRO DEL HEADER */
+.logo {
+  position: absolute; /* Flotante pero dentro del header */
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+nav a:hover,
+.btn-registrarse:hover {
+  background-color: #002244;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ajusta según tu diseño */
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+
+/* Nosotros */
+.bloque-nosotros {
+  background-color: #f9fbfd;
+  padding: 4rem 2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.contenedor-nosotros {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.texto-nosotros {
+  flex: 1 1 45%;
+  color: #002244;
+}
+.texto-nosotros h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #002244;
+}
+.texto-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.imagen-nosotros {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.btn-leer-mas {
+  background-color: #002244;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn-leer-mas:hover {
+  background-color: #003366;
+}
+
+/* Compromiso ambiental */
+.seccion-ambiental {
+  background-color: #f4f8fb;
+  padding: 4rem 2rem;
+}
+.contenedor-ambiental-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.imagen-ambiental img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+.contenido-ambiental {
+  flex: 1 1 450px;
+  color: #002b45;
+}
+.contenido-ambiental h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+.slogan-ambiental {
+  font-style: italic;
+  background-color: #e0f3ff;
+  padding: 1rem;
+  border-left: 5px solid #0077b6;
+  margin-bottom: 1.5rem;
+}
+.lista-ambiental {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.lista-ambiental li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.llamado {
+  font-weight: 500;
+  color: #00334d;
+  background-color: #d6effa;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/* Servicios */
+.titulo-servicios {
+  font-size: 2rem;
+  text-align: center;
+  color: #002b45;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.tarjeta-servicio {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 12px;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.tarjeta-servicio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+.tarjeta-servicio h3,
+.tarjeta-servicio p {
+  position: relative;
+  z-index: 1;
+}
+.tarjeta-servicio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.tarjeta-servicio p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.ver-mas {
+  margin-top: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px; /* Ajusta el espacio */
+}
+.btn-vermas {
+  background-color: #004d99;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-vermas:hover {
+  background-color: #003366;
+}
+
+/* Contacto */
+.contacto-seccion {
+  background-color: #001a33;
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.contacto-texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3d98b6;
+}
+.contacto-texto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+}
+.contacto-datos ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row; /* Cambiamos a fila */
+  justify-content: center; /* Centramos */
+  gap: 40px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Para que se ajuste en móviles */
+}
+
+.contacto-datos li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+.contacto-datos li a:hover {
+  color: #00bfff;
+}
+.decoracion-izq,
+.decoracion-der {
+  position: absolute;
+  width: 80px;
+  opacity: 0.8;
+}
+.decoracion-izq {
+  top: 20px;
+  left: 30px;
+}
+.decoracion-der {
+  bottom: 20px;
+  right: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Texto justificado */
+section h1, section h3, section p, section li,
+p, .texto, .contenido, .descripcion, .slogan-ambiental {
+  text-align: justify;
+}
+.seccion-nosotros {
+  background-color: #f4f6fa;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: #002244;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.descripcion-nosotros {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #002244;
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria - Alformetalicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo de Mi Empresa" />
+    </a>
+    <div class="contenedor">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="activo">Galeria</a></li>
+          <li><a href="registro.html" class="btn-registrarse">Contactanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion-contacto">
+    <h1>Contáctanos</h1>
+
+    <section class="info-contacto">
+      <div class="formulario">
+        <form action="https://formsubmit.co/tuemail@example.com" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <div class="mapa-contacto">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.992034964967!2d-74.10046602564027!3d4.594152342277036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfe2a6f01f3%3A0x72c7dd9d0e10b5f1!2sMuseo%20Nacional%20de%20Colombia!5e0!3m2!1ses!2sco!4v1721250000000!5m2!1ses!2sco" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alformetalicas sas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

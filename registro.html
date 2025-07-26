@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto Alformetalicas sas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo de Mi Empresa" />
+    </a>
+    <div class="contenedor">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Galeria</a></li>
+          <li><a href="registro.html" class="activo">Contactanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion-registro">
+    <h1>Registro</h1>
+    <form action="https://formsubmit.co/tinti1504@gmail.com" method="POST" class="formulario-registro">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <label for="empresa">Nombre de empresa (opcional):</label>
+      <input type="text" id="empresa" name="empresa" />
+
+      <label for="mensaje">Mensaje o comentarios:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alformetalicas sas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
