@@ -3,51 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto Alformetalicas sas</title>
+  <title>Regístrate - Alformetalicas sas</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"
+   />
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="/favicon.ico?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+
+  
   <header>
+  <div class="contenedor-header">
     <a href="index.html" class="logo">
-      <img src="Img/logo.png" alt="Logo de Mi Empresa" />
+      <img src="Img/logo.png" alt="Logo de Alformetalicas SAS" />
     </a>
-    <div class="contenedor">
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Galeria</a></li>
-          <li><a href="registro.html" class="activo">Contactanos</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        
+        <li><a href="registro.html" class="btn-registrarse">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="seccion-trabaja">
+  <div class="overlay-trabaja"></div>
+
+  <div class="contenido-trabaja">
+
+    <!-- NUEVO CONTENEDOR -->
+    <div class="encabezado-trabaja">
+      <h1>Trabaja con nosotros</h1>
+      <p class="subtitulo-trabaja">
+        Déjanos tus datos y nuestro equipo se pondrá en contacto contigo lo más pronto posible.
+      </p>
     </div>
-  </header>
 
-  <main class="seccion-registro">
-    <h1>Registro</h1>
-    <form action="https://formsubmit.co/tinti1504@gmail.com" method="POST" class="formulario-registro">
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" name="nombre" required />
+    <div class="tarjeta-formulario">
+      <h2>Formulario de contacto</h2>
+      
 
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required />
+      <!-- FORMULARIO FUNCIONAL -->
+      <form action="https://formspree.io/f/xojvzlvr" method="POST" class="formulario-contacto">
 
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" required />
+  <input type="hidden" name="_subject" value="Nuevo contacto - Alformetalicas">
+  <input type="hidden" name="_template" value="table">
 
-      <label for="empresa">Nombre de empresa (opcional):</label>
-      <input type="text" id="empresa" name="empresa" />
+  <div class="campo">
+    <label>Nombre completo</label>
+    <input type="text" name="nombre" required>
+  </div>
 
-      <label for="mensaje">Mensaje o comentarios:</label>
-      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+  <div class="campo">
+    <label>Correo electrónico</label>
+    <input type="email" name="email" required>
+  </div>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
+  <div class="campo">
+    <label>Teléfono</label>
+    <input type="tel" name="telefono">
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Alformetalicas sas. Todos los derechos reservados.</p>
+  <div class="campo">
+    <label>Mensaje</label>
+    <textarea name="mensaje" rows="4" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-enviar">
+    Enviar información
+  </button>
+</form>
+
+    </div>
+  </div>
+</section>
+ <footer>
+    <div class="contenedor">
+      <p>© 2026 Alformetalicas sas. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+

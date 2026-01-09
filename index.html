@@ -10,6 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="/favicon.ico?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -24,7 +31,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li> 
         <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Galería</a></li>
+        
         <li><a href="registro.html" class="btn-registrarse">Contáctanos</a></li>
       </ul>
     </nav>
@@ -32,18 +39,39 @@
 </header>
 
 
-  <section class="hero" id="inicio" data-aos="fade-up">
-    <div class="contenedor">
-      <h2>“Garantizamos tu producción, mientras cuidamos tu maquinaria”</h2>
-    </div>
-  </section>
+ <section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
 
-<section id="bloque-nosotros" class="bloque-nosotros" data-aos="fade-up">
+  <div class="hero-contenido" data-aos="fade-up">
+    <span class="hero-tag">Calidad y Precisión</span>
+
+    <h1>
+      Garantizamos tu producción, mientras cuidamos tu <br>
+      <span>Maquinaria</span>
+    </h1>
+
+    <p>
+      Nuestro propósito es garantizar la satisfacción de nuestros clientes, por medio de nuestros procesos de calidad.
+       Contáctanos hoy mismo para discutir cómo podemos contribuir a mejorar tus procesos.
+    </p>
+
+    <div class="hero-botones">
+     
+       <a href="servicios.html" class="btn-hero secundario">
+        Conoce nuestros ultimos proyectos
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="bloque-nosotros" class="bloque-nosotros fondo-nosotros" data-aos="fade-up">
+
   <div class="contenedor-nosotros">
     <div class="texto-nosotros">
       <h3>Nosotros</h3>
       <p>
-        Con más de 6 años impulsando el crecimiento industrial, en<Strong> Alformetalicas SAS</Strong> nos especializamos en brindar soluciones integrales en diseño, fabricación y mantenimiento de estructuras metálicas para diversos sectores de la industria. 
+        Con más de 6 años impulsando el crecimiento industrial, en<Strong> Alformetalicas SAS</Strong> nos especializamos en brindar soluciones integrales en fabricación y mantenimiento de estructuras metálicas para diversos sectores de la industria. 
         Nuestra experiencia, calidad y cumplimiento nos han posicionado como un aliado estratégico para quienes buscan confianza, durabilidad y eficiencia en cada proyecto.
 
 Nos mueve el compromiso con el bienestar de nuestros clientes, la mejora continua y el desarrollo sostenible, ofreciendo un servicio que responde a las necesidades específicas de cada empresa, siempre con altos estándares de seguridad, innovación y responsabilidad.
@@ -54,13 +82,14 @@ Nos mueve el compromiso con el bienestar de nuestros clientes, la mejora continu
       <img src="Img/2.jpg" alt="Imagen decorativa de Alformetalicas" />
     </div>
   </div>
+  
 </section>
 <section id="compromiso-ambiental" class="seccion-ambiental" data-aos="zoom-in">
   <div class="contenedor-ambiental-flex">
     
     <!-- Imagen primero (a la izquierda) -->
     <div class="imagen-ambiental">
-      <img src="Img/ambiental.png" alt="Compromiso ambiental Alformetalicas" />
+      <img src="Img/ambiental.jpeg" alt="Compromiso ambiental Alformetalicas" />
     </div>
 
     <!-- Contenido a la derecha -->
@@ -91,7 +120,8 @@ Nos mueve el compromiso con el bienestar de nuestros clientes, la mejora continu
   </div>
 </section>
 
-    <section id="servicios" class="seccion-servicios" data-aos="fade-up">
+  <section id="servicios" class="seccion-servicios fondo-servicios" data-aos="fade-up">
+
   <div class="contenedor">
     <h2 class="titulo-servicios">Servicios</h2>
     <div class="grid-servicios">
@@ -117,48 +147,68 @@ Nos mueve el compromiso con el bienestar de nuestros clientes, la mejora continu
     </div>
   </div>
 </section>
-  <section id="contacto" class="contacto-seccion">
-  <div class="contenido-contacto">
-    <div class="contacto-texto">
-      <h2>¡Tu próximo proyecto empieza aquí!</h2>
-      <p>
-        Nuestro propósito es garantizar la satisfacción de nuestros clientes, 
-        por medio de nuestros procesos de calidad.
-        Contáctanos hoy mismo para discutir cómo podemos contribuir a mejorar tus procesos.
+<section class="contacto-industrial">
+  <div class="contacto-grid">
+
+    <!-- Columna 1: Empresa -->
+    <div class="contacto-col">
+      <h3 class="contacto-titulo">ALFORMETALICAS S.A.S</h3>
+      <p class="contacto-descripcion">
+        Fabricación y mantenimiento de estructuras metálicas industriales,
+        comprometidos con la calidad, la seguridad y el cumplimiento.
       </p>
     </div>
 
-    <div class="contacto-datos">
-      <ul>
-        <li>
-          <a href="mailto:alformetalicas@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i> alformetalicas@gmail.com
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/alformetalicas" target="_blank">
-            <i class="fab fa-instagram"></i> Alformetalicas
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/alformetalicas" target="_blank">
-            <i class="fab fa-facebook"></i> Alformetalicas
-          </a>
-        </li>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <!-- Columna 2: Contacto Directo -->
+    <div class="contacto-col">
+      <h3 class="contacto-titulo">Contacto Directo</h3>
 
-  <!-- Elementos decorativos (puedes usar imágenes) -->
-  <img src="Img/llave.png" class="decoracion-izq" alt="herramienta">
-  <img src="Img/llave.png" class="decoracion-der" alt="engranaje">
+      <a href="https://wa.me/573001234567" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        Escríbenos por WhatsApp
+      </a>
+
+      <p class="nota-contacto">
+        Atención personalizada para cotizaciones, mantenimiento, contratación de personal y proyectos industriales.
+      </p>
+    </div>
+
+    <!-- Columna 3: Redes y correo -->
+    <div class="contacto-col">
+      <h3 class="contacto-titulo">Conéctate con nosotros</h3>
+
+      <p>
+        <a href="mailto:alformetalicas@gmail.com">
+          <i class="fas fa-envelope"></i>
+          alformetalicas@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.instagram.com/alformetalicas" target="_blank">
+          <i class="fab fa-instagram"></i>
+          @alformetalicas
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.facebook.com/alformetalicas" target="_blank">
+          <i class="fab fa-facebook"></i>
+          Alformetalicas
+        </a>
+      </p>
+    </div>
+
+  </div>
 </section>
+
+  
+
 
 
   <footer>
     <div class="contenedor">
-      <p>© 2025 Alformetalicas SAS. Todos los derechos reservados.</p>
+      <p>© 2026 Alformetalicas SAS. Todos los derechos reservados.</p>
     </div>
   </footer>
 
@@ -182,5 +232,28 @@ Nos mueve el compromiso con el bienestar de nuestros clientes, la mejora continu
     cambiarFondo();
     setInterval(cambiarFondo, 3000);
   </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const fondoSeguridad = document.querySelector('.fondo-carrusel-seguridad');
+    const imagenesSeguridad = [
+      'Img/1.jpg',
+      'Img/2.jpg',
+      'Img/3.jpg'
+    ];
+    let indiceSeguridad = 0;
+
+    function cambiarFondoSeguridad() {
+      fondoSeguridad.style.backgroundImage = `url('${imagenesSeguridad[indiceSeguridad]}')`;
+      fondoSeguridad.style.backgroundSize = 'cover';
+      fondoSeguridad.style.backgroundPosition = 'center';
+      indiceSeguridad = (indiceSeguridad + 1) % imagenesSeguridad.length;
+    }
+
+    cambiarFondoSeguridad(); // Primera imagen
+    setInterval(cambiarFondoSeguridad, 4000); // Cambia cada 4s
+  });
+</script>
+
+
 </body>
 </html>

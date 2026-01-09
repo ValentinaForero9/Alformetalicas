@@ -1,0 +1,675 @@
+/* Fuente y base */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+/* HEADER - Estilos generales (para desktop) */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  padding: 15px 0; /* Añade espacio interno */
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+  height: 60px; /* Reduce un poco el tamaño */
+  width: auto;
+  transition: all 0.3s;
+}
+
+/* Menú de navegación */
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+  header .contenedor {
+    flex-direction: column; /* Apila logo y menú */
+    padding: 10px;
+  }
+
+  .logo {
+    position: static; /* Elimina el posicionamiento absoluto */
+    transform: none;
+    margin-bottom: 15px;
+  }
+
+  .logo img {
+    height: 50px; /* Tamaño más pequeño para móviles */
+  }
+
+  nav ul {
+    flex-direction: column; /* Menú vertical */
+    width: 100%;
+    text-align: center;
+  }
+
+  nav li {
+    padding: 8px 0;
+  }
+}
+/* Hero */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ajusta según tu diseño */
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+
+/* Nosotros */
+.bloque-nosotros {
+  background-color: #f9fbfd;
+  padding: 4rem 2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.contenedor-nosotros {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.texto-nosotros {
+  flex: 1 1 45%;
+  color: #002244;
+}
+.texto-nosotros h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #002244;
+}
+.texto-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.imagen-nosotros {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.btn-leer-mas {
+  background-color: #002244;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn-leer-mas:hover {
+  background-color: #003366;
+}
+
+/* Compromiso ambiental */
+.seccion-ambiental {
+  background-color: #f4f8fb;
+  padding: 4rem 2rem;
+}
+.contenedor-ambiental-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.imagen-ambiental img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+.contenido-ambiental {
+  flex: 1 1 450px;
+  color: #002b45;
+}
+.contenido-ambiental h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+.slogan-ambiental {
+  font-style: italic;
+  background-color: #e0f3ff;
+  padding: 1rem;
+  border-left: 5px solid #0077b6;
+  margin-bottom: 1.5rem;
+}
+.lista-ambiental {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.lista-ambiental li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.llamado {
+  font-weight: 500;
+  color: #00334d;
+  background-color: #d6effa;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/* Servicios */
+.titulo-servicios {
+  font-size: 2rem;
+  text-align: center;
+  color: #002b45;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.tarjeta-servicio {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 12px;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.tarjeta-servicio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+.tarjeta-servicio h3,
+.tarjeta-servicio p {
+  position: relative;
+  z-index: 1;
+}
+.tarjeta-servicio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.tarjeta-servicio p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.ver-mas {
+  margin-top: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px; /* Ajusta el espacio */
+}
+.btn-vermas {
+  background-color: #004d99;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-vermas:hover {
+  background-color: #003366;
+}
+
+/* Contacto */
+.contacto-seccion {
+  background-color: #001a33;
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.contacto-texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3d98b6;
+}
+.contacto-texto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+}
+.contacto-datos ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row; /* Cambiamos a fila */
+  justify-content: center; /* Centramos */
+  gap: 40px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Para que se ajuste en móviles */
+}
+
+.contacto-datos li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+.contacto-datos li a:hover {
+  color: #00bfff;
+}
+.decoracion-izq,
+.decoracion-der {
+  position: absolute;
+  width: 80px;
+  opacity: 0.8;
+}
+.decoracion-izq {
+  top: 20px;
+  left: 30px;
+}
+.decoracion-der {
+  bottom: 20px;
+  right: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Texto justificado */
+section h1, section h3, section p, section li,
+p, .texto, .contenido, .descripcion, .slogan-ambiental {
+  text-align: justify;
+}
+.seccion-nosotros {
+  background-color: #f4f6fa;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  color: #002244;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.descripcion-nosotros {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #002244;
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/* Sección Nosotros */
+.seccion-nosotros {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  color: #111;
+  text-align: justify;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #002244;
+  margin-bottom: 40px;
+}
+
+/* Bloque presentación (quiénes somos) */
+.bloque-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-caja {
+  flex: 1 1 400px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.imagen-nosotros img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Misión, visión y valores */
+.mision-vision-valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-left: 6px solid #002244;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #002244;
+}
+
+.card ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.card ul li::before {
+  content: "✔";
+  margin-right: 10px;
+  color: #002244;
+}
+
+/* Seguridad industrial */
+.seccion-seguridad {
+  padding: 100px 20px 40px;
+  background-color: #f4f9ff;
+  color: #111;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.contenedor-seguridad-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-seguridad {
+  flex: 1 1 400px;
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 34, 68, 0.1);
+}
+
+.imagen-seguridad img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenido-seguridad {
+  flex: 1 1 450px;
+  max-width: 600px;
+}
+
+.contenido-seguridad h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #002244;
+}
+
+.slogan-seguridad {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: justify;
+}
+
+.lista-seguridad {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.lista-seguridad li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 17px;
+}
+
+.llamado-seguridad {
+  font-weight: bold;
+  text-align: justify;
+  background-color: #d8ebff;
+  padding: 12px;
+  border-left: 5px solid #002244;
+  border-radius: 6px;
+  color: #002244;
+}
+
+
+
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+  height: 60px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Aquí separas los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.activo,
+nav ul li a.btn-registrarse:hover {
+  background-color: #004080;
+  border-radius: 6px;
+}
+
+/* Botón "Contáctanos" */
+.btn-registrarse {
+  background-color: #007bff;
+  color: #fff !important;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.seccion-seguridad {
+  background-color: #f5f7fa;
+  padding: 80px 20px;
+}
+
+.contenedor-seguridad-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* Fondo dinámico */
+.fondo-carrusel-seguridad {
+  flex: 1 1 40%;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido seguridad */
+.contenido-seguridad {
+  flex: 1 1 50%;
+  text-align: justify;
+  padding: 20px;
+}
+
+.contenido-seguridad h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #002244;
+}
+
+.lista-seguridad {
+  padding-left: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+.lista-seguridad li {
+  margin-bottom: 8px;
+}
+
+.llamado-seguridad {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #003366;
+}
+.fondo-carrusel-seguridad {
+  flex: 1 1 40%;
+  min-height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+

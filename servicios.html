@@ -3,51 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios - Alformetalicas sas</title>
+  <title> Servicios - Alformetalicas sas</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"
+   />
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="/favicon.ico?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
 
-  <header>
-    <header>
+<header>
+   <div class="contenedor-header">
     <a href="index.html" class="logo">
-      <img src="Img/logo.png" alt="Logo de Mi Empresa" />
+      <img src="Img/logo.png" alt="Logo de Alformetalicas SAS" />
     </a>
-    <div class="contenedor">
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Galeria</a></li>
-          <li><a href="registro.html" class="activo">Contactanos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  </header>
-
-  <section id="servicios" class="seccion" data-aos="fade-right">
-    <div class="contenedor">
-      <h3>Servicios</h3>
+    <nav>
       <ul>
-        <li>Punzonado CNC</li>
-        <li>Corte y doblado de lámina</li>
-        <li>Diseño de piezas metálicas</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        
+        <li><a href="registro.html" class="btn-registrarse">Contáctanos</a></li>
       </ul>
-    </div>
-  </section>
+    </nav>
+  </div>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
-  <footer>
-    <div class="contenedor">
-      <p>© 2025 Alformetalicas sas. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+</header>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<!-- ===== PROYECTO DESTACADO ===== -->
+<section class="servicio-bloque fondo-gris">
+  <div class="servicio-contenido" data-aos="fade-up">
+    <h2><i class="fa-solid fa-star"></i> Proyecto Destacado</h2>
+    <p class="descripcion">
+      Proyecto industrial integral que involucró fabricación metálica,
+      instalación de maquinaria y sistemas eléctricos completos.
+    </p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Img/1.jpg"></div>
+        <div class="swiper-slide"><img src="Img/2.jpg"></div>
+        <div class="swiper-slide"><img src="Img/3.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== FABRICACION ===== -->
+ <section class="servicio-bloque fondo-imagen-metalica">
+
+  <div class="servicio-contenido" data-aos="fade-up">
+    <h2><i class="fa-solid fa-industry"></i> Fabricación de Estructuras Metálicas</h2>
+    <p class="descripcion">
+      Diseño y fabricación de estructuras resistentes y funcionales
+      para entornos industriales exigentes.
+    </p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Img/estructura1.jpg"></div>
+        <div class="swiper-slide"><img src="Img/estructura2.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+  <!-- ELECTRICIDAD -->
+  <section class="servicio-bloque fondo-azul">
+  <div class="servicio-contenido" data-aos="fade-up">
+    <h2 class="titulo-blanco">
+      <i class="fa-solid fa-bolt"></i> Electricidad Industrial
+    </h2>
+    <p class="descripcion blanco">
+      Instalaciones eléctricas industriales, tableros de control,
+      canalizaciones y sistemas de protección.
+    </p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Img/electrica1.jpg"></div>
+        <div class="swiper-slide"><img src="Img/electrica2.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+<!-- ==== SWIPER JS ==== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swipers = document.querySelectorAll('.mySwiper');
+
+  swipers.forEach(swpr => {
+    new Swiper(swpr, {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      pagination: {
+        el: swpr.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: swpr.querySelector('.swiper-button-next'),
+        prevEl: swpr.querySelector('.swiper-button-prev'),
+      },
+    });
+  });
+</script>
+
+
+<footer>
+  © 2026 Alformetalicas SAS – Todos los derechos reservados
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 </body>
 </html>
