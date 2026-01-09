@@ -1528,7 +1528,80 @@ html, body {
 
 footer {
   margin-top: 0;
+}@media (max-width: 1024px) {
+
+  .contenedor {
+    padding: 0 20px;
+  }
+
 }
+@media (max-width: 768px) {
+
+  .bloque-nosotros {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .texto-caja,
+  .imagen-nosotros {
+    width: 100%;
+  }
+
+  .imagen-nosotros img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .servicio-bloque {
+    padding: 30px 20px;
+  }
+
+  .servicio-contenido {
+    width: 100%;
+  }
+
+  .servicio-contenido h2 {
+    font-size: 1.6rem;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .contenedor-seguridad-flex {
+    padding: 30px;
+  }
+
+  .contenido-seguridad h2 {
+    font-size: 1.8rem;
+  }
+
+}
+@media (max-width: 768px) {
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+}
+
 
 
 
