@@ -1464,7 +1464,7 @@ html, body {
 }
 .tarjeta-formulario {
   position: relative;
-  background-image: url("img/fondo.jpeg"); /* tu imagen */
+  background-image: url("Img/fondo.jpeg"); /* tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1601,6 +1601,59 @@ footer {
   }
 
 }
+@media (max-width: 768px) {
+
+  /* TODO lo que esté en horizontal pasa a vertical */
+  .bloque-nosotros,
+  .servicio-bloque,
+  .servicio-contenido,
+  .contenedor-seguridad-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .bloque-nosotros *,
+  .servicio-bloque *,
+  .servicio-contenido *,
+  .contenedor-seguridad-flex * {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .swiper,
+  .swiper-wrapper,
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .bloque-nosotros,
+  .servicio-bloque,
+  .contenedor-seguridad-flex {
+    padding: 25px !important;
+  }
+
+}
+@media (max-width: 768px) {
+  body {
+    background: red !important;
+  }
+}
+
 
 
 
